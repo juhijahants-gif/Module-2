@@ -28,24 +28,21 @@ To write a Python program that generates **Pascal's Triangle** using numbers. Th
 
 ## 🧪 Program
 ```
-from math import factorial
-
-# Input number of rows
-rows = int(input("Enter the number of rows: "))
-
-# Generate Pascal's Triangle
-for i in range(rows):
-    # Print spaces for alignment
-    print(" " * (rows - i), end="")
-    
-    # Calculate and print each value
-    for j in range(i + 1):
-        print(factorial(i) // (factorial(j) * factorial(i - j)), end=" ")
-    print()
+def pascal_triangle(n):
+    for i in range(n):
+        print(" "*(n-i-1),end="")
+        val=1
+        for j in range(i+1):
+            print(val,end=" ")
+            val=val*(i-j)//(j+1)
+        print()
+n=int(input())
+pascal_triangle(n)
 ```
 
 ## Sample Output
-<img width="637" height="139" alt="image" src="https://github.com/user-attachments/assets/977c65de-b0cc-4cb3-b434-78919ac98f58" />
+![WhatsApp Image 2025-10-19 at 19 31 36_831fbaf4](https://github.com/user-attachments/assets/e3098038-38a9-4a0e-834f-7b67e528af49)
+
 
 ## Result
 The Python program successfully takes the number of rows as input from the user and generates Pascal’s Triangle.
