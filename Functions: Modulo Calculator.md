@@ -12,14 +12,17 @@ To write a Python program that defines a function which accepts two values and r
 
 ## 🧾 Program
 ```
-def find_modulo(a, b):
-    return a % b
-result = find_modulo(17, 5)
-print("17 % 5 =", result)
+def result(a,b):
+   return a%b
+a=int(input())
+b=int(input())
+modulo=result(a,b)
+print("modulo is",modulo)
 ```
 
 ## Output
-<img width="155" height="42" alt="Screenshot 2025-10-14 204951" src="https://github.com/user-attachments/assets/c4dac7cd-99d0-4917-bb77-41db2de655b6" />
+![WhatsApp Image 2025-10-19 at 19 22 56_dda9ceab](https://github.com/user-attachments/assets/d9e3b65a-e7c3-4ee2-963e-7608e0ff517a)
+
 
 ## Result
 The program successfully defines a function and returns the modulo of the two inputs
