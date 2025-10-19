@@ -17,31 +17,24 @@ To write a Python program that checks whether a given number is a *palindrome* u
 
 ## 🧾 Program
 Add code Here
-
-# Palindrome Number Checker
-
-# Step 1: Get input from user
-num = int(input("Enter a number: "))
-
-# Step 2: Store original number in temp
-temp = num
-
-# Step 3: Initialize rev to 0
-rev = 0
-
-# Step 4: Reverse the number using while loop
-while temp > 0:
-    rev = (rev * 10) + (temp % 10)
-    temp = temp // 10
-
-# Step 5: Check if palindrome
-if num == rev:
-    print(f"{num} is a palindrome number.")
+```
+n=int(input())
+rev=0
+org=n
+while n>0:
+    rem=n%10
+    rev=rev*10+rem
+    n//=10
+if(rev==org):
+  print("The given number",org,"is a Palindrome")
 else:
-    print(f"{num} is not a palindrome number.")
+    print("The given number",org,"is not a palindrome")
+```
 
 ## Output
-<img width="797" height="67" alt="image" src="https://github.com/user-attachments/assets/bdf503b2-c6f1-4494-9501-9405560fb05e" />
+![WhatsApp Image 2025-10-19 at 19 34 44_b76ebad9](https://github.com/user-attachments/assets/23e3c9b8-173c-496c-9c74-84e422cdfa33)
+
+
 
 ## Result
 The program successfully takes a number as input from the user, reverses it using a while loop, and compares it with the original number.
